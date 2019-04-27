@@ -8,4 +8,13 @@ let hero = {
         type: 'airsoft gun',
         damage: 2,
     }
+};
+function rest() {
+    
+};
+function pickUpItem() {
+    
+};
+function equipWeapon(){
+    
 }
