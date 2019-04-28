@@ -9,12 +9,33 @@
 
 
   <!-- 👍 YOUR HTML HERE 👍 -->
+  <br>
+  <br>
+  <h1>The enemy horde is approaching. Take defensive positions!</h1>
+  <p id="intro">You are a noble soldier of the 32nd infantry division and you are in the midst of an unknown enemy horde. Since your weapon's barrel got destroyed by a high velocity fragmentation, you have to aquire new weapons on the go. Be aware: it seems like the enemy commander is also present in the battlefield. Try taking some rest when you've been wounded by the enemy. Good luck, soldier!</p>
+  <form onsubmit=changeName() >
+    <p>What will your hero's name be?</p>
+    <div>
+      <label for='name'>Name:</label>
+      <input type='text'id='userInputName' name='newHeroName'>
+    </div>
+    <br>
+    <button type='submit' id='submitNewName'>
+      Submit the new name
+    </button>
+  </form>
+  <br>
+  <br>
+<button onclick=alert(displayStats(hero))>Situation report</button>
+  <p id="thisShowsStats">lol</p>
   <img title="Rest" onclick=rest(hero) class="actions" id="inn" src=/home/ismail/codaisseur/week-1/bb-herogame-starter-master/rest.png alt="Our hero will rest when you click this.">
   <br>
-  <img title="Pick up a new item" onclick= pickUpItem(hero,'dagger') class="actions" id="dagger" src=/home/ismail/codaisseur/week-1/bb-herogame-starter-master/pickup.jpg alt="Our hero will pick up something new.">
+  <img title="Pick up a new item" onclick= pickUpItem(hero,'dagger') class="actions" id="dagger" src=/home/ismail/codaisseur/week-1/bb-herogame-starter-master/riflebayonet.png alt="Our hero will pick up something new.">
   <br>
   <img title="Equip weapon" onclick=equipWeapon(hero) class="actions" id="bag" src=/home/ismail/codaisseur/week-1/bb-herogame-starter-master/equipweapon.jpg alt="Our hero will equip the weapon to slay his foes.">
   <br>
+  <br>
+  <img title="Kill your nemesis!" onclick=killEnemy(hero) class="actions" id= "enemy" src=/home/ismail/codaisseur/week-1/bb-herogame-starter-master/enemy.jpg>
   <!--<div class="alert">
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
     Our hero is OK at the moment!
