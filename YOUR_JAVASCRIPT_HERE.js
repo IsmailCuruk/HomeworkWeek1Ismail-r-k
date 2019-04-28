@@ -18,7 +18,7 @@ function rest(someObject) {
     }
     
 };
-rest(hero)
+
 function pickUpItem() {
     
 };
