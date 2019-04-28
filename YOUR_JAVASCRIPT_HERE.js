@@ -5,7 +5,7 @@ let hero = {
     inventory: [],
     health: 10,
     weapon: {
-        type: 'airsoft gun',
+        type: 'bare fists',
         damage: 2,
     }
 };
@@ -35,3 +35,10 @@ function equipWeapon(heroLike){
     heroLike.weapon = heroLike.inventory[0];
     alert(`You switched your weapon to ${heroLike.weapon.type}!`)
     }}
+
+    function displayStats(heroLike){
+        console.log("Hero: " + heroLike.name);
+        console.log("Health: " + heroLike.health);
+        console.log("Weapon: " + JSON.stringify(heroLike.weapon));
+    }
+ displayStats(hero)
