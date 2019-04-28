@@ -28,6 +28,6 @@ function pickUpItem(heroLike, weaponLike) {
    };
     
 
-function equipWeapon(){
-
-}
+function equipWeapon(heroLike){
+    return heroLike.weapon = heroLike.inventory[0];
+    }
