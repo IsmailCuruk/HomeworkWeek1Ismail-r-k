@@ -9,6 +9,7 @@ let hero = {
         damage: 2,
     }
 };
+
 function rest(someObject) {
     if (someObject.health === 10){
         alert("No need to take a rest; the hero's health is full.")
@@ -16,12 +17,17 @@ function rest(someObject) {
         someObject.health = 10;
         return someObject;
     }
-    
 };
 
-function pickUpItem() {
+function pickUpItem(heroLike, weaponLike) {
+   let newlyAddedWeapon = {
+       type: weaponLike,
+       damage: 2,
+    };
+       return heroLike.inventory.push(newlyAddedWeapon);
+   };
     
-};
+
 function equipWeapon(){
 
 }
