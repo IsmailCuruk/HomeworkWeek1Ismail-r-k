@@ -10,13 +10,15 @@ let hero = {
     }
 };
 function rest(someObject) {
-    someObject.health = 10;
-    return someObject;
-    if (someObject.health === 10) {
-        return document.getElementById()
+    if (someObject.health === 10){
+        alert("No need to take a rest; the hero's health is full.")
+    } else {
+        someObject.health = 10;
+        return someObject;
+    }
     
-}
 };
+rest(hero)
 function pickUpItem() {
     
 };
