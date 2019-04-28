@@ -3,14 +3,21 @@
     <meta charset="utf-8">
     <title>Mocha Tests</title>
     <link href="lib/mocha.css" rel="stylesheet" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 
 
   <!-- 👍 YOUR HTML HERE 👍 -->
+  <img class="actions" id="inn" src=/home/ismail/codaisseur/week-1/bb-herogame-starter-master/rest.png alt="Our hero will rest when you click this.">
+  <img class="actions" id="dagger" src=/home/ismail/codaisseur/week-1/bb-herogame-starter-master/equipweapon.jpg alt="Our hero will equip the weapon to slay his foes.">
+  <img class="actions" id="bag" src=/home/ismail/codaisseur/week-1/bb-herogame-starter-master/pickup.jpg alt="Our hero will pick up something new.">
 
-
-
+  <div> class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+    Our hero is OK at the moment!
+  </div>
+ 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
 

@@ -12,7 +12,10 @@ let hero = {
 function rest(someObject) {
     someObject.health = 10;
     return someObject;
-
+    if (someObject.health === 10) {
+        return document.getElementById()
+    
+}
 };
 function pickUpItem() {
     
