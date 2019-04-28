@@ -29,5 +29,9 @@ function pickUpItem(heroLike, weaponLike) {
     
 
 function equipWeapon(heroLike){
-    return heroLike.weapon = heroLike.inventory[0];
-    }
+    if (heroLike.inventory.length === 0 ) {
+       alert("You have no weapon to equip; Find one!")
+    } else {
+    heroLike.weapon = heroLike.inventory[0];
+    alert(`You switched your weapon to ${heroLike.weapon.type}!`)
+    }}
